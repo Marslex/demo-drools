@@ -10,6 +10,8 @@ public class Receipt implements java.io.Serializable {
 
 	private java.lang.String url;
 
+	private java.lang.String channel;
+
 	public Receipt() {
 	}
 
@@ -21,8 +23,17 @@ public class Receipt implements java.io.Serializable {
 		this.url = url;
 	}
 
-	public Receipt(java.lang.String url) {
+	public java.lang.String getChannel() {
+		return this.channel;
+	}
+
+	public void setChannel(java.lang.String channel) {
+		this.channel = channel;
+	}
+
+	public Receipt(java.lang.String url, java.lang.String channel) {
 		this.url = url;
+		this.channel = channel;
 	}
 
 }

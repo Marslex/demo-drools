@@ -6,12 +6,23 @@ package com.myspace.pf_rene_svc;
 
 public class Receipt implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    public Receipt() {
-    }
+	private java.lang.String url;
 
+	public Receipt() {
+	}
 
+	public java.lang.String getUrl() {
+		return this.url;
+	}
 
+	public void setUrl(java.lang.String url) {
+		this.url = url;
+	}
+
+	public Receipt(java.lang.String url) {
+		this.url = url;
+	}
 
 }
